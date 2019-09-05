@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class PercelInfo implements Serializable {
 	
-	private int id;
 	private String waybillNum;
 	private String username;
 	private String telphone;
@@ -16,23 +15,14 @@ public class PercelInfo implements Serializable {
 		
 	}
 	
-	public PercelInfo(int id, String waybillNum, String username, String telphone, String state, String appointmentTime,
+	public PercelInfo(String waybillNum, String username, String telphone, String state, String appointmentTime,
 			String weight) {
-		this.id = id;
 		this.waybillNum = waybillNum;
 		this.username = username;
 		this.telphone = telphone;
 		this.state = state;
 		this.appointmentTime = appointmentTime;
 		this.weight = weight;
-	}
-
-	public int getId() {
-		return id;
-	}
-	
-	public void setId(int id) {
-		this.id = id;
 	}
 	
 	public String getWaybillNum() {

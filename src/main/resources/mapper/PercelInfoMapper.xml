@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tws.repository.PercelInfoMapper">
+    <select id="selectAll" resultType="tws.entity.PercelInfo">
+        select * from `percelInfo`;
+    </select>
+
+    <insert id="insert" parameterType="tws.entity.PercelInfo">
+       insert into 
+       		`percelInfo`(`waybillNum`,`username`,`telphone`,`weight`,`state`,`appointmentTime`) 
+       values
+       		(#{percelInfo.waybillNum},#{percelInfo.username},#{percelInfo.telphone},#{percelInfo.weight},#{percelInfo.state},#{percelInfo.appointmentTime});
+    </insert>
+</mapper>
