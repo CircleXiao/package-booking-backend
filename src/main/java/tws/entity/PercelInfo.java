@@ -27,8 +27,6 @@ public class PercelInfo implements Serializable {
 		this.weight = weight;
 	}
 
-
-
 	public int getId() {
 		return id;
 	}
